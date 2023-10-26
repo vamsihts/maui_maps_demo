@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="maui_mapsdemo.app/maui_mapsdemo">
+      <BCSymbolMapName>maui_mapsdemo.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>maui_mapsdemo.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/hyperthreadsolutionspvtltd/Desktop/BitBucket/maui_maps/maui_mapsdemo/maui_mapsdemo/obj/Debug/net7.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>maui_mapsdemo.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/hyperthreadsolutionspvtltd/Desktop/BitBucket/maui_maps/maui_mapsdemo/maui_mapsdemo</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{42703091-0CA4-4EDE-A0F3-F022E03CB780}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.maui__mapsdemo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7551448B-4373-4CCD-BE50-CE833F09448B" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="maui_mapsdemo/Platforms/iOS/MapExtensions.cs">
+    <Files>
+      <File FileName="maui_mapsdemo/Platforms/iOS/MapExtensions.cs" Line="42" Column="5" />
+      <File FileName="maui_mapsdemo/Platforms/iOS/Program.cs" Line="13" Column="1" />
+      <File FileName="maui_mapsdemo/Platforms/iOS/CustomAnnotation.cs" />
+      <File FileName="maui_mapsdemo/CustomPin.cs" />
+      <File FileName="maui_mapsdemo/MainPage.xaml.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="maui_mapsdemo" expanded="True">
+            <Node name="maui_mapsdemo" expanded="True">
+              <Node name="Platforms" expanded="True">
+                <Node name="iOS" expanded="True">
+                  <Node name="MapExtensions.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Resources" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7551448B-4373-4CCD-BE50-CE833F09448B" />
+</Properties>

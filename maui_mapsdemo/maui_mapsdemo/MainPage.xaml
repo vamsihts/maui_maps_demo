@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps" xmlns:local="clr-namespace:maui_mapsdemo"
+             x:Class="maui_mapsdemo.MainPage"
+             Title="MAUI Maps Demo">
+   
+    <StackLayout Spacing="20" VerticalOptions="FillAndExpand">
+           <maps:Map
+        VerticalOptions="FillAndExpand"
+            HeightRequest="700"
+                x:Name="myMapView"
+                IsShowingUser="True"
+                IsZoomEnabled="True"
+                IsScrollEnabled="True"
+                MapType="Street"
+                MapClicked="myMapView_MapClicked"
+                />
+
+            <Button Margin="30,0" FontAttributes="Bold" FontSize="Header" x:Name="showDirectionsBtn" Clicked="showDirectionsBtn_Clicked" HeightRequest="40" Text="Show Directions"/>
+        </StackLayout>
+
+</ContentPage>
+
