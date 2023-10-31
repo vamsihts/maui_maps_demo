@@ -68,14 +68,32 @@ public static partial class MapExtensions
         image.Image = UIImage.FromFile("xamarin.png");
         customPinView.AddSubview(image);
         UILabel label = new UILabel();
-        label.Frame = new CGRect(0, 150, 200, 70);
-        label.BackgroundColor = UIColor.Green;
+            label.Frame = new CGRect(0, 70, 200, 70);
+            label.BackgroundColor = UIColor.Green;
         label.Text = "Custom View";
 
-        customPinView.AddSubview(label);
-		//customPinView.Tag = i++;
+            UIButton button = new UIButton();
+            button.Frame = new CGRect(0, 160, 200, 70);
+            button.BackgroundColor = UIColor.Yellow;
+            button.SetTitle("Custom Button", UIControlState.Normal);
+            button.SetTitleColor(UIColor.Blue, UIControlState.Normal);
+            button.UserInteractionEnabled = true;
 
-        customPinView.Center = new CGPoint(0, -(e.View.Frame.Height + 175));
+            button.TouchUpInside += async (sender, ea) =>
+            {
+                System.Console.WriteLine("Custom button pressed");
+            };
+
+            button.TouchUpOutside += async (sender, ea) =>
+            {
+                System.Console.WriteLine(" TouchUpOutside Custom button pressed");
+            };
+
+            customPinView.AddSubview(label);
+            customPinView.AddSubview(button);
+
+
+            customPinView.Center = new CGPoint(0, -(e.View.Frame.Height + 125));
             customView.AddSubview(customPinView);
             MapExtensions.customView = customView;
 
@@ -92,14 +110,12 @@ public static partial class MapExtensions
 		{
 			if (customPinView != null)
 			{
-				//customView.RemoveFromSuperview();
-				//customView.Dispose();
-				//customView = null;
-				//e.View.RemoveFromSuperview();
-				//e.View.Dispose();
-				//e.View = null;
+					foreach (UIView view in customView.Subviews)
+					{
+						view.RemoveFromSuperview();
+					}
+                    }
 			}
-		}
 	}
 	}
 

@@ -12,7 +12,7 @@
       <CodesignDisableTimestamp>true</CodesignDisableTimestamp>
       <CodesignKeychain></CodesignKeychain>
       <CodesignUseHardenedRuntime></CodesignUseHardenedRuntime>
-      <SourceProjectPath>/Users/hyperthreadsolutionspvtltd/Desktop/BitBucket/maui_maps/maui_mapsdemo/maui_mapsdemo</SourceProjectPath>
+      <SourceProjectPath>/Users/hyperthreadsolutionspvtltd/Desktop/BitBucket/maui_maps_demo/maui_mapsdemo/maui_mapsdemo</SourceProjectPath>
     </_CodesignBundle>
   </ItemGroup>
 </Project>
