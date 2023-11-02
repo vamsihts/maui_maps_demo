@@ -115,7 +115,7 @@ public static partial class MapExtensions
 						view.RemoveFromSuperview();
 					}
                     }
-			}
+		}
 	}
 	}
 

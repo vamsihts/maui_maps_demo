@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{F465583F-E398-43C1-A752-EE2FB23771EF}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.sf__maps__maui PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7551448B-4373-4CCD-BE50-CE833F09448B" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="sf_maps_maui/MainPage.xaml">
+    <Files>
+      <File FileName="sf_maps_maui/MainPage.xaml.cs" Line="20" Column="1" />
+      <File FileName="sf_maps_maui/MainPage.xaml" Line="94" Column="35" />
+      <File FileName="sf_maps_maui/MauiProgram.cs" Line="5" Column="1" />
+      <File FileName="sf_maps_maui/CustomMarker.cs" Line="99" Column="10" />
+      <File FileName="sf_maps_maui/WonderViewModel.cs" Line="52" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="sf_maps_maui" expanded="True">
+            <Node name="sf_maps_maui" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="net7.0-ios" expanded="True">
+                  <Node name="PackageDependencies" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7551448B-4373-4CCD-BE50-CE833F09448B" />
+</Properties>

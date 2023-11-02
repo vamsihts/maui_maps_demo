@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="sf_maps_maui.app/sf_maps_maui">
+      <BCSymbolMapName>sf_maps_maui.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>sf_maps_maui.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/hyperthreadsolutionspvtltd/Documents/xamarin/sf_maps_maui/sf_maps_maui/obj/Debug/net7.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>sf_maps_maui.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/hyperthreadsolutionspvtltd/Documents/xamarin/sf_maps_maui/sf_maps_maui</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

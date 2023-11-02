@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sf_maps_maui.MainPage"
+             xmlns:map="clr-namespace:Syncfusion.Maui.Maps;assembly=Syncfusion.Maui.Maps"
+             xmlns:maps="http://schemas.syncfusion.com/maui" xmlns:sf_maps_maui="clr-namespace:sf_maps_maui">
+
+    <ContentPage.Resources>
+    <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <StackLayout IsClippedToBounds="false"
+                             HorizontalOptions="StartAndExpand"
+                             VerticalOptions="End"
+                             HeightRequest="35">
+                    <Image Source="{Binding Image}"
+                           Scale="1"
+                           Aspect="Fill"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="Center"
+                           HeightRequest="35"
+                           WidthRequest="35" />
+                </StackLayout>
+            </DataTemplate>
+            
+            <DataTemplate x:Key="markerTooltipTemplate">
+                <StackLayout IsClippedToBounds="false"
+                             HorizontalOptions="StartAndExpand"
+                             VerticalOptions="End"
+                             HeightRequest="300"
+                             >
+                    <Label Text="{Binding DataItem.Name}"
+                           TextColor="White"></Label>
+                    <Label Text="{Binding DataItem.State}"
+                           TextColor="Red"></Label>
+                    <Button Clicked="Button_Clicked" Text="View current location" TextColor="Blue" BackgroundColor="White"/>
+                </StackLayout>
+            </DataTemplate>
+
+            <DataTemplate x:Key="markerTemplateSettings">
+                <StackLayout IsClippedToBounds="false"
+                             HorizontalOptions="StartAndExpand"
+                             VerticalOptions="End"
+                             HeightRequest="35">
+                    <Image Source="{Binding Image}"
+                           Scale="1"
+                           Aspect="Fill"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="Center"
+                           HeightRequest="35"
+                           WidthRequest="35" />
+                </StackLayout>
+            </DataTemplate>
+            
+            <Style TargetType="Button">
+                <Setter Property="Background"
+                        Value="White" />
+                <Setter Property="Padding"
+                        Value="10,5,10,5" />
+                <Setter Property="CornerRadius"
+                        Value="15" />
+                <Setter Property="TextColor"
+                        Value="Black" />
+                <Setter Property="FontSize"
+                        Value="12" />
+                <Setter Property="Margin"
+                        Value="5,0,5,0" />
+            </Style>
+        </ResourceDictionary>
+        </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <sf_maps_maui:WonderViewModel/>
+    </ContentPage.BindingContext>
+            
+<maps:SfMaps x:Name="myMapView" Grid.RowSpan="2">
+                <maps:SfMaps.Layer>
+                    <maps:MapTileLayer x:Name="layer"
+                                       UrlTemplate="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+                                       CanCacheTiles="True"
+                                       ShowMarkerTooltip="True"
+                                       Markers="{Binding Markers}"
+                                       MarkerTooltipTemplate="{StaticResource markerTooltipTemplate}"
+                                       MarkerTemplate="{StaticResource markerTemplate}"
+                                       >
+                 <map:MapTileLayer.MarkerTooltipSettings>
+
+                    
+                <map:MapTooltipSettings Background="#002080"
+                                        Padding="2">
+
+                    <map:MapTooltipSettings.TextStyle>
+                        <map:MapLabelStyle FontSize="12"
+                                           TextColor="White"
+                                           FontAttributes="Italic" />
+                    </map:MapTooltipSettings.TextStyle>
+
+                </map:MapTooltipSettings>
+            </map:MapTileLayer.MarkerTooltipSettings>
+
+                        <maps:MapTileLayer.Center>
+                            <maps:MapLatLng>
+                                <x:Arguments>
+                                    <x:Double>20.6843</x:Double>
+                                    <x:Double>-88.5678</x:Double>
+                                </x:Arguments>
+                            </maps:MapLatLng>
+                        </maps:MapTileLayer.Center>
+                        
+                        <maps:MapTileLayer.ZoomPanBehavior>
+                            <maps:MapZoomPanBehavior MinZoomLevel="3"
+                                                     MaxZoomLevel="10"
+                                                     EnableDoubleTapZooming="True" >
+                                <maps:MapZoomPanBehavior.ZoomLevel>
+                                    <OnPlatform x:TypeArguments="x:Double">
+                                        <On Platform="UWP, MacCatalyst"
+                                            Value="5" />
+                                        <On Platform="iOS, Android"
+                                            Value="4" />
+                                    </OnPlatform>
+                                </maps:MapZoomPanBehavior.ZoomLevel>
+                                </maps:MapZoomPanBehavior>
+                        </maps:MapTileLayer.ZoomPanBehavior>
+
+                <map:MapTileLayer.Sublayers>
+                <map:MapPolylineLayer>
+                    <map:MapPolylineLayer.Polylines>
+                        <map:MapPolyline Stroke="#0066FF"
+                                          StrokeThickness="6">
+                            <map:MapPolyline.Points>
+                                <map:MapLatLng Latitude="20.6843"
+                                               Longitude="-88.5678" />
+                                <map:MapLatLng Latitude="-13.1631"
+                                               Longitude="-72.5450" />
+                               
+                            </map:MapPolyline.Points>
+                        </map:MapPolyline>
+                    </map:MapPolylineLayer.Polylines>
+                </map:MapPolylineLayer>
+            </map:MapTileLayer.Sublayers>
+
+                    </maps:MapTileLayer>
+                </maps:SfMaps.Layer>
+            </maps:SfMaps>
+
+</ContentPage>
+
